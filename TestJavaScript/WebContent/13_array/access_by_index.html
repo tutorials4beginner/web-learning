@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Array elements are accessed using their index number.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var i = 0;
+
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits[0] = "Kiwi";
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+function myFunction1() {
+	if(i == 4)
+		i = 0;
+    document.getElementById("demo1").innerHTML = fruits[i];
+    i++;
+}
+</script>
+
+</body>
+</html>

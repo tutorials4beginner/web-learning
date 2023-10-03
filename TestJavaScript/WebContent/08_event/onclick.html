@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+<p>Click the button to display the date.</p>
+
+<button onmouseover="displayDate()" onmouseout="removeDate()">The time is?</button>
+
+<script>
+function displayDate() {
+    document.getElementById("demo1").innerHTML = Date();
+}
+
+function removeDate() {
+    document.getElementById("demo1").innerHTML = "";
+}
+
+</script>
+
+<p id="demo1"></p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h1>My First Web Page</h1>
+	<p>My first paragraph.</p>
+
+	<script>
+		document.write(5 + 6);
+		
+		function myFun(){
+			
+			var x = document.getElementById("num1").value;
+			var y = document.getElementById("num2").value;
+			//alert("I am here !!!");
+			//alert(x);
+			//alert(y);
+			var res = parseInt(x) + parseInt(y);
+			//alert(res);
+			document.getElementById("res").innerHTML = res;
+		}
+	</script>
+
+	<input type="text" id="num1">
+	<input type="text" id="op">
+	<input type="text" id="num2">
+
+	<button onmouseover="myFun()">Click here</button>
+
+	<p id="res"></p>
+
+</body>
+</html>

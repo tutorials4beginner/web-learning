@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+	</script>
+<script>
+$(document).ready(function() {
+	$("#slide1").click(function() {
+		$("#View1").slideToggle("slow");
+	});
+	$("#slide2").click(function() {
+		$("#View2").slideToggle("slow");
+	});
+	$("#slide3").click(function() {
+		$("#View3").slideToggle("slow");
+	});
+});
+</script>
+<style type="text/css">
+#slide1,#slide2,#slide3,#View1,#View2,#View3{
+padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+
+}
+#View1,#View2,#View3{
+	padding: 50px;
+}
+</style>
+</head>
+<body>
+<div id="slide1">Click to Here To See</div>
+<div id="View1">Hello How Are You</div>
+<div id="slide2">Click to Here To See</div>
+<div id="View2">Hello How Are You</div>
+<div id="slide3">Click to Here To See</div>
+<div id="View3">Hello How Are You</div>
+</body>
+</html>

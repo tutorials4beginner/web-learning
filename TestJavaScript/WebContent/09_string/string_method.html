@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos1 = str.indexOf("locate");
+    var pos2 = str.lastIndexOf("locate");
+    var pos3 = str.search("locate");    
+    document.getElementById("demo1").innerHTML = pos1;
+    document.getElementById("demo2").innerHTML = pos2;
+    document.getElementById("demo3").innerHTML = pos3;
+}
+</script>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo4").innerHTML = str.slice(7,13);
+document.getElementById("demo5").innerHTML = str.slice(-12,-6);
+document.getElementById("demo6").innerHTML = str.slice(7);
+</script>
+
+
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo7"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo7").innerHTML = str.substring(7,13);
+</script>
+
+
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo8"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+document.getElementById("demo8").innerHTML = str.substr(7,6);
+</script>
+
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo9">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("demo9").innerHTML; 
+    var txt = str.replace("Microsoft","W3Schools");
+    document.getElementById("demo9").innerHTML = txt;
+}
+</script>
+
+
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction10()">Try it</button>
+
+<p id="demo10">Hello World!</p>
+
+<script>
+function myFunction10() {
+    var text = document.getElementById("demo10").innerHTML;
+    document.getElementById("demo10").innerHTML = text.toUpperCase();
+}
+</script>
+
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="demo11"></p>
+
+<script>
+var text1 = "Hello";
+var text2 = "World!"
+document.getElementById("demo11").innerHTML = text1.concat(" ",text2);
+</script>
+
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo12"></p>
+
+<script>
+var str = "HELLO WORLD";
+document.getElementById("demo12").innerHTML = str.charAt(0);
+</script>
+
+
+<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+<p id="demo13"></p>
+
+<script>
+var str = "HELLO WORLD";
+document.getElementById("demo13").innerHTML = str.charCodeAt(0);
+</script>
+
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+<button onclick="myFunction14()">Try it</button>
+
+<p id="demo14"></p>
+
+<script>
+function myFunction14() {
+    var str = "a,b,c,d,e,f";
+    var arr = str.split(",");
+    document.getElementById("demo14").innerHTML = arr[0];
+}
+</script>
+
+
+<p id="demo15"></p>
+
+<script>
+var str = "Hello";
+var arr = str.split("");
+var text = "";
+var i;
+for (i = 0; i < arr.length; i++) {
+    text += arr[i] + "<br>"
+}
+document.getElementById("demo15").innerHTML = text;
+</script>
+
+</body>
+</html>

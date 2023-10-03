@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+var x = "John";              // x is a string
+var y = new String("John");  // y is an object
+
+document.getElementById("demo").innerHTML =
+typeof x + " " + typeof y;
+</script>
+
+
+<p id="demo1"></p>
+
+<script>
+var x1 = "John";              // x is a string
+var y1 = new String("John");  // y is an object
+document.getElementById("demo1").innerHTML = x1==y1;
+</script>
+
+
+<p id="demo2"></p>
+
+<script>
+var x2 = "John";              // x is a string
+var y2 = new String("John");  // y is an object
+document.getElementById("demo2").innerHTML = x2===y2;
+</script>
+
+
+
+
+</body>
+</html>
